@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
 
 #content {
   font-family: "Architects Daughter", cursive;
@@ -107,7 +107,6 @@ section:nth-of-type(n + 2) .section-background::before {
     #279207,
     #209b01,
     #81f945
-  );
   );
   filter: blur(10px);
   transform: translate3d(0px, 0px, -1px);
