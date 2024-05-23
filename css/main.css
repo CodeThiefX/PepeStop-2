@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+body {
+  font-family: "Oswald", sans-serif;
+}
+
 /* HTML: <div class="corner-only"></div> */
 .corner-only {
   --s: 50px; /* size of the corners */
