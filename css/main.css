@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 
 #content {
-  font-family: "Oswald", sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif, sans-serif;
 }
 
 /* HTML: <div class="corner-only"></div> */
@@ -36,4 +37,92 @@
   100% {
     background-position: right -25% top 0;
   }
+}
+
+.title {
+  text-shadow: rgb(54, 255, 64) 0 0 10px;
+}
+
+.button-title {
+  text-shadow: rgb(54, 255, 64) 0 0 10px;
+}
+
+section:nth-of-type(n + 2) .section-background::before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 20px;
+  z-index: 999;
+  transform: translateY(-10px);
+  backdrop-filter: blur(2px);
+}
+
+/* Vibrate on hover */
+.vibrate:hover {
+  animation: vibrate 0.3s linear infinite;
+}
+@keyframes vibrate {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.box-9 {
+  position: relative;
+  transform-style: preserve-3d;
+}
+.box-9::before {
+  content: "";
+  position: absolute;
+  inset: 0px;
+  background: conic-gradient(
+    from 90deg at 40% -25%,
+    #81f945,
+    #7be13f,
+    #74da39,
+    #6dd333,
+    #66cc2d,
+    #5fc627,
+    #58bf21,
+    #51b81b,
+    #4ab215,
+    #43ab0f,
+    #3ca509,
+    #359f03,
+    #2e980d,
+    #279207,
+    #209b01,
+    #81f945
+  );
+  );
+  filter: blur(10px);
+  transform: translate3d(0px, 0px, -1px);
+  clip-path: polygon(
+    -100vmax -100vmax,
+    100vmax -100vmax,
+    100vmax 100vmax,
+    -100vmax 100vmax,
+    -100vmax -100vmax,
+    calc(0px - 0px) calc(0px - 0px),
+    calc(0px - 0px) calc(100% - 0px - 0px),
+    calc(100% - 0px - 0px) calc(100% - 0px - 0px),
+    calc(100% - 0px - 0px) calc(0px - 0px),
+    calc(0px - 0px) calc(0px - 0px)
+  );
+  pointer-events: none;
 }
