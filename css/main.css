@@ -1,8 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 
 #content {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif, sans-serif;
+  font-family: "Architects Daughter", cursive;
 }
 
 /* HTML: <div class="corner-only"></div> */
